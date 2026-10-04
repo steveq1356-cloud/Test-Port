@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5W7C1K97H4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-5W7C1K97H4');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Stephen Quartarone - Engineering Portfolio</title>
+<meta name="description" content="Mechanical Engineering portfolio of Stephen Quartarone (Northeastern University): manufacturing tooling, mechanical design, robotics, 3D printing, and FEA case studies.">
+<meta name="theme-color" content="#f5f4ef">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Stephen Quartarone - Engineering Portfolio">
+<meta property="og:description" content="Manufacturing, mechanical design, robotics, CAD, 3D printing, analysis, and hands-on implementation.">
+<meta property="og:url" content="https://stephenquartarone.com/">
+<meta property="og:image" content="https://stephenquartarone.com/dual-thumb.jpg">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <nav class="nav" aria-label="Primary">
+    <a class="brand" href="index.html">
+      <span class="brand-mark ticks">SQ</span>
+      <span class="brand-text"><span class="brand-name">Stephen Quartarone</span><span class="brand-sub">Mechanical Engineering</span></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false"><span></span></button>
+    <div class="nav-links">
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#working-on">Working On</a>
+      <a href="tldr.html">TLDR</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#contact">Contact</a>
+      <a class="nav-cta" href="resume.pdf" target="_blank" rel="noopener">Résumé ↗</a>
+    </div>
+  </nav>
+  <div class="progress" aria-hidden="true"></div>
+</header>
+
+<main id="main">
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <svg class="hero-drawing" viewBox="0 0 800 800" fill="none" stroke="currentColor" aria-hidden="true">
+      <circle class="draw" cx="400" cy="400" r="300" stroke-width="1.4" pathLength="1"/>
+      <circle class="draw d2" cx="400" cy="400" r="110" stroke-width="1.4" pathLength="1"/>
+      <circle class="draw d2" cx="400" cy="400" r="150" stroke-width=".8" pathLength="1"/>
+      <g>
+        <circle class="draw d3" cx="610" cy="400" r="18" stroke-width="1.2" pathLength="1"/>
+        <circle class="draw d3" cx="548.5" cy="251.5" r="18" stroke-width="1.2" pathLength="1"/>
+        <circle class="draw d3" cx="400" cy="190" r="18" stroke-width="1.2" pathLength="1"/>
+        <circle class="draw d3" cx="251.5" cy="251.5" r="18" stroke-width="1.2" pathLength="1"/>
+        <circle class="draw d3" cx="190" cy="400" r="18" stroke-width="1.2" pathLength="1"/>
+        <circle class="draw d3" cx="251.5" cy="548.5" r="18" stroke-width="1.2" pathLength="1"/>
+        <circle class="draw d3" cx="400" cy="610" r="18" stroke-width="1.2" pathLength="1"/>
+        <circle class="draw d3" cx="548.5" cy="548.5" r="18" stroke-width="1.2" pathLength="1"/>
+      </g>
+      <g class="fade" stroke-width=".9">
+        <path d="M60 400H740M400 60V740" stroke-dasharray="30 6 4 6"/>
+        <circle cx="400" cy="400" r="210" stroke-dasharray="30 6 4 6"/>
+        <path d="M100 392V36M700 392V36"/>
+        <path d="M112 54H354M446 54H688"/>
+        <path d="M100 54l14-5v10zM700 54l-14-5v10z" fill="currentColor" stroke="none"/>
+        <path d="M561 238L640 150H760"/>
+        <path d="M561 238l4-13 7 6z" fill="currentColor" stroke="none"/>
+      </g>
+      <g class="fade" fill="currentColor" stroke="none" font-family="JetBrains Mono, monospace" font-size="17" letter-spacing="1">
+        <text x="400" y="60" text-anchor="middle">Ø600</text>
+        <text x="648" y="140">8× Ø36 EQ SP</text>
+        <text x="418" y="232" font-size="14">PCD Ø420</text>
+      </g>
+    </svg>
+
+    <div class="wrap">
+      <p class="eyebrow">Mechanical Engineering Portfolio</p>
+      <h1>Stephen Quartarone</h1>
+      <div class="hero-row">
+        <p class="hero-lead">A selection of engineering projects spanning manufacturing, mechanical design, robotics, CAD, 3D printing, analysis, and hands-on implementation.</p>
+        <div class="hero-actions">
+          <a class="btn btn--primary" href="#projects">View projects <span class="arrow">↓</span></a>
+          <a class="btn" href="tldr.html">The quick version <span class="arrow">→</span></a>
+          <a class="btn" href="resume.pdf" target="_blank" rel="noopener">Résumé <span class="arrow">↗</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="section" id="projects">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="section-rule"><span class="num">01</span><span>Selected work</span><span class="rule"></span><span>06 projects</span></div>
+        <div class="section-head-row">
+          <h2 class="title">View my favorite works</h2>
+          <p class="section-intro">Each project opens into a full case study covering the problem, design process, manufacturing, analysis, and result.</p>
+        </div>
+      </div>
+
+      <div class="project-grid">
+
+        <a class="card ticks reveal" href="dual-cavity.html">
+          <div class="plate">
+            <span class="plate-id">P-<b>01</b></span>
+            <img src="dual-thumb.jpg" alt="CAD render of the dual-cavity polyurethane mold on its rolling base">
+            <span class="plate-open">Case study ↗</span>
+          </div>
+          <div class="card-body">
+            <div class="org"><img class="org-logo" src="logo-globe.jpg" alt="Globe Composite Solutions"><span class="label">Globe Composite · 2026</span></div>
+            <h3>Dual-Cavity Polyurethane Mold</h3>
+            <p class="card-summary">Designed a dual-cavity production mold to improve throughput, floor-space efficiency, and operator safety.</p>
+            <div class="metric"><strong>2×</strong><span>Production in the same floor space</span></div>
+          </div>
+        </a>
+
+        <a class="card ticks reveal" href="swing-bolt.html">
+          <div class="plate">
+            <span class="plate-id">P-<b>02</b></span>
+            <img src="swing-thumb.png" alt="Swing bolt demold system installed on a production mold" loading="lazy">
+            <span class="plate-open">Case study ↗</span>
+          </div>
+          <div class="card-body">
+            <div class="org"><img class="org-logo" src="logo-globe.jpg" alt="Globe Composite Solutions"><span class="label">Globe Composite · 2026</span></div>
+            <h3>Swing Bolt Demold System</h3>
+            <p class="card-summary">Reduced demold time by 83% for a process completed 20–40 times per day.</p>
+            <div class="metric"><strong>12 → 2 min</strong><span>Demolding time per cycle</span></div>
+          </div>
+        </a>
+
+        <a class="card ticks reveal" href="warehouse-robot.html">
+          <div class="plate photo">
+            <span class="plate-id">P-<b>03</b></span>
+            <img src="robot-thumb.jpg" alt="Render of the autonomous mobile robot with its scissor lift" loading="lazy">
+            <span class="plate-open">Case study ↗</span>
+          </div>
+          <div class="card-body">
+            <div class="org"><img class="org-logo" src="logo-northeastern.png" alt="Northeastern University"><span class="label">Northeastern · Spring 2025</span></div>
+            <h3>Autonomous Mobile Robot</h3>
+            <p class="card-summary">Designed and iterated a 3D-printed scissor-lift system for an autonomous warehouse robot.</p>
+            <div class="metric"><strong>Scissor lift</strong><span>Rack-and-pinion, 3D printed</span></div>
+          </div>
+        </a>
+
+        <a class="card ticks reveal" href="test-molds.html">
+          <div class="plate">
+            <span class="plate-id">P-<b>04</b></span>
+            <img src="test-thumb-redacted.png" alt="Redacted assembly drawing of the polyurethane test mold" loading="lazy">
+            <span class="plate-open">Case study ↗</span>
+          </div>
+          <div class="card-body">
+            <div class="org"><img class="org-logo" src="logo-globe.jpg" alt="Globe Composite Solutions"><span class="label">Globe Composite · 2026</span></div>
+            <h3>Polyurethane Test Molds</h3>
+            <p class="card-summary">Developed six production test molds and a complete rolling test system for daily material evaluation.</p>
+            <div class="metric"><strong>6 molds</strong><span>Leak-free and in daily use</span></div>
+          </div>
+        </a>
+
+        <a class="card ticks reveal" href="wire-saw.html">
+          <div class="plate">
+            <span class="plate-id">P-<b>05</b></span>
+            <img src="wire-thumb.jpg" alt="CAD model of the PVC containment enclosure frame around the workpiece" loading="lazy">
+            <span class="plate-open">Case study ↗</span>
+          </div>
+          <div class="card-body">
+            <div class="org"><img class="org-logo" src="logo-ess.png" alt="Engineered Syntactic Systems"><span class="label">Engineered Syntactic · 2026</span></div>
+            <h3>Temporary Wire Saw Containment Enclosure</h3>
+            <p class="card-summary">Created a rapid, low-cost enclosure to eliminate an airborne dust hazard during a critical repair.</p>
+            <div class="metric"><strong>Days</strong><span>Design to deployment</span></div>
+          </div>
+        </a>
+
+        <a class="card ticks reveal" href="parallettes.html">
+          <div class="plate photo">
+            <span class="plate-id">P-<b>06</b></span>
+            <img src="white-parallettes.png" alt="White 3D-printed modular parallettes with a wooden handle" loading="lazy">
+            <span class="plate-open">Case study ↗</span>
+          </div>
+          <div class="card-body">
+            <div class="org"><span class="mark" aria-hidden="true">SQ</span><span class="label">Personal project · 2026</span></div>
+            <h3>Parallette Gym Equipment</h3>
+            <p class="card-summary">Designed, printed, tested, and validated a 3D-printed parallette using FEA and real-world calisthenics use.</p>
+            <div class="metric"><strong>0.90 MPa</strong><span>Peak stress under a 228 N load</span></div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WORKING ON ===== -->
+  <section class="section" id="working-on">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="section-rule"><span class="num">02</span><span>Working on</span><span class="rule"></span><span class="live"><i></i>In progress</span></div>
+        <div class="section-head-row">
+          <h2 class="title">Working On</h2>
+          <p class="section-intro">What I’m designing and building right now, from the hardware to the software that runs it.</p>
+        </div>
+      </div>
+
+      <article class="wip ticks reveal">
+        <figure class="wip-media">
+          <div class="stage">
+            <span class="plate-id">WIP-<b>01</b></span>
+            <span class="stage-tag">Simulated run</span>
+            <canvas id="ip-canvas" role="img" aria-label="Animated drawing of InsertPress picking brass inserts from a tray and pressing them into four different printed parts"></canvas>
+          </div>
+          <div class="dro" aria-hidden="true">
+            <span class="ax"><i>X</i><b id="dro-x">22.00</b></span>
+            <span class="ax"><i>Y</i><b id="dro-y">14.00</b></span>
+            <span class="ax"><i>Z</i><b id="dro-z">58.00</b></span>
+            <span class="ax"><i>Tip</i><b id="dro-t">235 °C</b></span>
+            <span class="ax"><i>Set</i><b id="dro-n">0 / 15</b></span>
+            <span class="st"><span class="led" id="dro-dot"></span><span id="dro-s">Ready</span></span>
+          </div>
+        </figure>
+
+        <div class="wip-body">
+          <div class="org"><img class="org-logo" src="logo-insertpress.svg" alt=""><span class="label">Personal project · In progress</span></div>
+          <h3>InsertPress</h3>
+          <p class="card-summary">An automatic heat-set insert machine I’m designing and building. The goal: load a plate of 3D-printed parts, press start, and have the machine read the STL, find every insert hole, and press each brass insert square and flush on its own.</p>
+          <ul class="wip-list">
+            <li>Designing and building the machine at Northeastern University’s EXP makerspace.</li>
+            <li>Spring-floated press head, a threaded insert pickup, and a closed-loop heated tip.</li>
+            <li>Companion <strong>Planner</strong> software, now on version 8: it reads the STL, finds the insert holes, checks the iron’s clearance, and generates the G-code for each run.</li>
+          </ul>
+          <div class="wip-specs"><span class="label">Design targets</span><span class="chip">M2–M5 inserts</span><span class="chip">30-pocket tray</span><span class="chip">200 × 200 mm bed</span><span class="chip">NEMA 17 · GRBL 1.1</span></div>
+          <div class="wip-actions">
+            <a class="btn btn--primary" href="https://steveq1356-cloud.github.io/InsertsV8/" target="_blank" rel="noopener">Try the Planner <span class="arrow">↗</span></a>
+            <a class="btn" href="https://github.com/steveq1356-cloud/InsertsV8" target="_blank" rel="noopener">Source code <span class="arrow">↗</span></a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section" id="about">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="section-rule"><span class="num">03</span><span>About me</span><span class="rule"></span></div>
+      </div>
+
+      <div class="about-grid reveal">
+        <aside class="spec-card ticks" aria-label="Profile summary">
+          <div class="spec-photo">
+            <img src="headshot.jpg" alt="Stephen Quartarone headshot" width="400" height="400" loading="lazy">
+            <span class="spec-tag">DETAIL A · SCALE 1:1</span>
+          </div>
+          <table class="spec-table">
+            <tr><th scope="row">Major</th><td>Mechanical Engineering</td></tr>
+            <tr><th scope="row">Minor</th><td>Aerospace Engineering</td></tr>
+            <tr><th scope="row">School</th><td>Northeastern University</td></tr>
+            <tr><th scope="row">Grad.</th><td>Expected 2028</td></tr>
+            <tr><th scope="row">Cert.</th><td>Certified SolidWorks Associate</td></tr>
+          </table>
+        </aside>
+
+        <div class="about-main">
+          <h2 class="title">Stephen Quartarone</h2>
+          <p class="about-copy">I turn engineering problems into practical, well-designed solutions, from CAD and prototyping through manufacturing, testing, and implementation. I’m most energized by hands-on work and carrying ideas all the way through.</p>
+          <div class="focus-list">
+            <span class="chip">Mechanical Design</span><span class="chip">Manufacturing</span><span class="chip">Robotics</span>
+            <span class="chip">Aerospace</span><span class="chip">Rapid Prototyping</span><span class="chip">3D Printing</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section" id="contact">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="section-rule"><span class="num">04</span><span>Contact me</span><span class="rule"></span></div>
+      </div>
+      <div class="contact-grid reveal">
+        <div>
+          <h2 class="title">Let’s build something worth talking about.</h2>
+          <p class="contact-copy">I’m interested in mechanical design, manufacturing, aerospace, robotics, and product-development opportunities.</p>
+        </div>
+        <div class="contact-list">
+          <div class="contact-row">
+            <span class="label">Email</span>
+            <a class="val" href="mailto:quartarone.s@northeastern.edu">quartarone.s@northeastern.edu</a>
+            <button class="copy-btn" type="button" data-copy="quartarone.s@northeastern.edu">Copy</button>
+          </div>
+          <a class="contact-row" href="https://www.linkedin.com/in/stephenquartarone/" target="_blank" rel="noopener">
+            <span class="label">LinkedIn</span><span class="val">/in/stephenquartarone</span><span class="go">↗</span>
+          </a>
+          <a class="contact-row" href="resume.pdf" target="_blank" rel="noopener">
+            <span class="label">Résumé</span><span class="val">Open PDF</span><span class="go">↗</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="title-block">
+      <div><span class="label">Drawn by</span><strong>Stephen Quartarone</strong></div>
+      <div><span class="label">Title</span><strong>Engineering Portfolio</strong></div>
+      <div><span class="label">Org</span><strong>Northeastern University</strong></div>
+      <div><span class="label">Rev</span><strong>2026</strong></div>
+      <div><span class="label">Sheet</span><strong>1 of 8</strong></div>
+    </div>
+    <div class="footer-note"><span>Stephen Quartarone · Mechanical Engineering</span><a href="#main">Back to top ↑</a></div>
+  </div>
+</footer>
+
+<div class="coords" aria-hidden="true"><span>X <b data-x>0000</b></span><span>Y <b data-y>0000</b></span></div>
+<script src="site.js"></script>
+<script src="insertpress.js"></script>
+</body>
+</html>
