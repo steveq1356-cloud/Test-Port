@@ -241,7 +241,7 @@ h2.title{
 @keyframes fadein{to{opacity:1}}
 
 /* ---------- project grid ---------- */
-.project-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.project-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}
 .card{
   --tick-opacity:0;--tick-color:var(--accent);
   display:flex;flex-direction:column;min-width:0;
@@ -252,7 +252,7 @@ h2.title{
 .card:hover::before{inset:-6px}
 
 .plate{
-  position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--sheet);
+  position:relative;aspect-ratio:16/10;overflow:hidden;background:var(--sheet);
   border-bottom:1px solid var(--line)
 }
 .plate img{width:100%;height:100%;object-fit:contain;padding:12px;transition:transform .5s cubic-bezier(.2,.7,.2,1)}
@@ -285,6 +285,20 @@ h2.title{
 .card-body .card-summary{margin-bottom:16px}
 .metric strong{font-family:var(--cond);font-weight:600;font-size:28px;line-height:1;color:var(--accent);white-space:nowrap}
 .metric span{color:var(--ink-3);font-size:13.5px;line-height:1.35}
+
+/* wide feature cards: photo and description side by side; --flip mirrors them */
+.card--feature{grid-column:1/-1;flex-direction:row}
+.card--feature .plate{flex:0 0 55%;aspect-ratio:auto;min-height:360px;border-bottom:0;border-right:1px solid var(--line)}
+.card--feature .plate img{position:absolute;inset:0}
+.card--flip{flex-direction:row-reverse}
+.card--flip .plate{border-right:0;border-left:1px solid var(--line)}
+.card--feature .card-body{justify-content:center;padding:30px 34px}
+.card--feature h3{font-size:clamp(30px,3vw,38px);margin-bottom:10px}
+.card--feature .card-summary{font-size:17px;margin-bottom:22px}
+.metric-pair{display:grid;grid-template-columns:1fr 1fr;gap:20px;padding-top:16px;border-top:1px dashed var(--line-strong)}
+.metric-pair div{display:flex;flex-direction:column;gap:6px}
+.metric-pair strong{font-family:var(--cond);font-weight:600;font-size:34px;line-height:1;color:var(--accent);white-space:nowrap}
+.metric-pair span{color:var(--ink-3);font-size:13.5px;line-height:1.35}
 
 /* ---------- working on ---------- */
 .wip{
@@ -589,7 +603,7 @@ main{counter-reset:fig sec}
 
 /* ---------- responsive ---------- */
 @media (max-width:1080px){
-  .project-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+  .project-grid{gap:24px}
   .contact-grid{grid-template-columns:1fr;gap:40px}
   .wip{grid-template-columns:1fr}
   .wip-media{border-right:0;border-bottom:1px solid var(--line-strong)}
@@ -661,6 +675,12 @@ main{counter-reset:fig sec}
 }
 @media (max-width:640px){
   .project-grid{grid-template-columns:1fr}
+}
+@media (max-width:860px){
+  .card--feature,.card--flip{flex-direction:column}
+  .card--feature .plate{flex:none;aspect-ratio:16/10;min-height:0;border-right:0;border-left:0;border-bottom:1px solid var(--line)}
+  .card--feature .card-body{padding:20px 20px 22px}
+  .metric-pair strong{font-size:28px}
 }
 @media (max-width:480px){
   .brand-sub{display:none}
